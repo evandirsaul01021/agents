@@ -1,20 +1,20 @@
 # Agent Skills
 
-Agent에 사용되는 skills 모음입니다.
+A collection of skills for AI coding agents.
 
-## 설치
+## Installation
 
 ```bash
-/plugin marketplace add <github-username>/agent
+/plugin marketplace add kangminhyuk1111/agents
 /plugin install my-skill@<marketplace-id>
 ```
 
-## 스킬 목록
+## Skills
 
-| 이름 | 설명 |
-|------|------|
-| my-skill | TODO - 스킬 설명 |
+| Name | Description |
+|------|-------------|
+| my-skill | TODO - Skill description |
 
-## 라이선스
+## License
 
 Apache 2.0

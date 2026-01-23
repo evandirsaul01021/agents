@@ -1,29 +1,29 @@
 ---
 name: my-skill
-description: TODO - 이 스킬이 무엇을 하는지, 언제 사용하는지 설명
+description: TODO - Describe what this skill does and when to use it
 ---
 
 # My Skill
 
-## 개요
-이 스킬은 [용도]를 위해 사용됩니다.
+## Overview
+This skill is used for [purpose].
 
-## 지침
-- 에이전트가 따라야 할 규칙 1
-- 에이전트가 따라야 할 규칙 2
+## Instructions
+- Rule 1 that the agent should follow
+- Rule 2 that the agent should follow
 
-## 예시
+## Examples
 
-### 입력
+### Input
 ```
-사용자 요청 예시
-```
-
-### 출력
-```
-기대하는 결과 예시
+Example user request
 ```
 
-## 가이드라인
-- 가이드라인 1
-- 가이드라인 2
+### Output
+```
+Expected result
+```
+
+## Guidelines
+- Guideline 1
+- Guideline 2

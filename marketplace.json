@@ -1,12 +1,12 @@
 {
-  "name": "my-skills-marketplace",
+  "name": "agent-skills-marketplace",
   "version": "1.0.0",
-  "description": "TODO - 마켓플레이스 설명",
+  "description": "TODO - Marketplace description",
   "skills": [
     {
       "name": "my-skill",
       "path": "skills/my-skill",
-      "description": "TODO - 스킬 설명"
+      "description": "TODO - Skill description"
     }
   ]
 }
