@@ -1,0 +1,22 @@
+{
+  "name": "agent-skill-kit",
+  "owner": {
+    "name": "kangminhyuk",
+    "email": "kangminhyuk1111@gmail.com"
+  },
+  "metadata": {
+    "description": "A collection of reusable skills for AI coding agents",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "spec-skills",
+      "description": "Skills for structured requirement analysis and specification generation",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/spec-interview"
+      ]
+    }
+  ]
+}

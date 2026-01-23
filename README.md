@@ -76,12 +76,16 @@ New skill contributions are welcome. To add a skill:
    Best practices and constraints.
    ```
 
-3. Register the skill in `marketplace.json`:
+3. Register the skill in `.claude-plugin/marketplace.json` by adding it to the appropriate plugin group:
    ```json
    {
-     "name": "your-skill-name",
-     "path": "skills/your-skill-name",
-     "description": "Short description"
+     "name": "your-plugin-group",
+     "description": "Group description",
+     "source": "./",
+     "strict": false,
+     "skills": [
+       "./skills/your-skill-name"
+     ]
    }
    ```
 
