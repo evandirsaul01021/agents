@@ -3,6 +3,8 @@
 A collection of reusable skills for AI coding agents.
 Share, discover, and compose skills that make your agent smarter.
 
+Compatible with [SkillsMP](https://skillsmp.com) | Claude Code | Codex CLI | ChatGPT
+
 ## How It Works
 
 Skills are defined as `SKILL.md` files — structured markdown documents that AI agents automatically recognize and execute. Each skill encodes a specific workflow (e.g., conducting a requirements interview and producing a specification document), turning a multi-step process into a single command.
