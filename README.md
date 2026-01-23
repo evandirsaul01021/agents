@@ -20,6 +20,7 @@ Skills are defined as `SKILL.md` files — structured markdown documents that AI
 | Skill | Description | Status |
 | --- | --- | --- |
 | [spec-interview](skills/spec-interview/SKILL.md) | Transforms vague requirements into actionable specifications (`SPEC.md`) through structured multi-round interviews | ✅ |
+| [release-notes](skills/release-notes/SKILL.md) | Analyzes git history to generate structured release notes (`RELEASE_NOTES.md`) with categorized changes and contributors | ✅ |
 
 > ✅ Ready | 🚧 In Progress | 📋 Planned
 
