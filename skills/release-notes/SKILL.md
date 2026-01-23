@@ -50,36 +50,10 @@ This skill generates structured release notes by analyzing git history. It deter
    - "Any additional notes to include in the release? (e.g., deprecation notices, known issues, acknowledgments)"
 
 ### Phase 3: Output
-7. Generate `RELEASE_NOTES.md` in the project root with the following structure:
-
-```markdown
-# Release Notes - vX.Y.Z
-
-> Released: YYYY-MM-DD
-
-## Highlights
-- Key changes summarized in 2-4 bullet points
-
-## Features
-- Clean description of each new feature
-
-## Bug Fixes
-- Clean description of each fix
-
-## Breaking Changes
-- Description of what changed
-- **Migration**: How to update (if migration guide was requested)
-
-## Improvements
-- Clean description of each improvement
-
-## Documentation
-- Documentation changes (if any)
-
-## Contributors
-- @contributor-name (N commits)
-```
-
+7. Read the template file at `skills/release-notes/output-template.md` and use it as the structure for generating `RELEASE_NOTES.md` in the project root.
+   - Replace `vX.Y.Z` with the confirmed version number.
+   - Replace `YYYY-MM-DD` with today's date.
+   - Fill each section with the categorized commit data from Phase 1 and interview answers from Phase 2.
 8. Omit sections that have no entries (e.g., if there are no breaking changes, skip that section entirely).
 9. Write the file and inform the user of the output location.
 
