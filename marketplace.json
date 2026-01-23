@@ -1,12 +1,12 @@
 {
   "name": "agent-skills-marketplace",
   "version": "1.0.0",
-  "description": "TODO - Marketplace description",
+  "description": "AI agent skills for structured requirement analysis and specification generation",
   "skills": [
     {
-      "name": "my-skill",
-      "path": "skills/my-skill",
-      "description": "TODO - Skill description"
+      "name": "spec-interview",
+      "path": "skills/spec-interview",
+      "description": "Conducts deep multi-round interviews to clarify requirements and produces structured specification documents"
     }
   ]
 }

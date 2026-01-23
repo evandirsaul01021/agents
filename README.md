@@ -1,19 +1,89 @@
-# Agent Skills
+# Agent Skill Kit
 
-A collection of skills for AI coding agents.
+A collection of reusable skills for AI coding agents.
+Share, discover, and compose skills that make your agent smarter.
+
+## How It Works
+
+Skills are defined as `SKILL.md` files — structured markdown documents that AI agents automatically recognize and execute. Each skill encodes a specific workflow (e.g., conducting a requirements interview and producing a specification document), turning a multi-step process into a single command.
+
+- **Agent-native**: Skills are plain markdown with frontmatter metadata. Any agent that reads files can pick them up.
+- **Self-contained**: Each skill lives in its own directory with everything it needs — instructions, examples, and output templates.
+- **Composable**: Skills are independent units. Use one at a time or chain them together for complex workflows.
+
+## Skills
+
+| Skill | Description | Status |
+| --- | --- | --- |
+| [spec-interview](skills/spec-interview/SKILL.md) | Transforms vague requirements into actionable specifications (`SPEC.md`) through structured multi-round interviews | ✅ |
+
+> ✅ Ready | 🚧 In Progress | 📋 Planned
+
+**Usage:**
+```
+/spec-interview
+```
+
+The skill will automatically discover requirement files (`SPEC.md`, `PRD.md`, `REQUIREMENTS.md`, etc.) in your project and begin the interview process.
 
 ## Installation
 
 ```bash
-/plugin marketplace add kangminhyuk1111/agents
-/plugin install my-skill@<marketplace-id>
+# 1. Clone the repository
+git clone https://github.com/kangminhyuk1111/agent-skill-kit.git
+
+# 2. Copy the skills you want into your project
+cp -r agent-skill-kit/skills/spec-interview /your-project/skills/
+
+# 3. Invoke the skill from your agent
+/spec-interview
 ```
 
-## Skills
+Alternatively, clone the entire repository and symlink individual skill directories into your projects as needed.
 
-| Name | Description |
-|------|-------------|
-| my-skill | TODO - Skill description |
+## Contributing
+
+New skill contributions are welcome. To add a skill:
+
+1. Create a new directory under `skills/`:
+   ```
+   skills/
+   └── your-skill-name/
+       └── SKILL.md
+   ```
+
+2. Write your `SKILL.md` with the following structure:
+   ```markdown
+   ---
+   name: your-skill-name
+   description: A short one-line description of what the skill does.
+   ---
+
+   # Skill Title
+
+   ## Overview
+   What the skill does and when to use it.
+
+   ## Instructions
+   Step-by-step instructions the agent will follow.
+
+   ## Examples
+   Input/output examples demonstrating the skill.
+
+   ## Guidelines
+   Best practices and constraints.
+   ```
+
+3. Register the skill in `marketplace.json`:
+   ```json
+   {
+     "name": "your-skill-name",
+     "path": "skills/your-skill-name",
+     "description": "Short description"
+   }
+   ```
+
+4. Submit a pull request.
 
 ## License
 
