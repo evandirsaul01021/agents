@@ -1,0 +1,12 @@
+{
+  "name": "my-skills-marketplace",
+  "version": "1.0.0",
+  "description": "TODO - 마켓플레이스 설명",
+  "skills": [
+    {
+      "name": "my-skill",
+      "path": "skills/my-skill",
+      "description": "TODO - 스킬 설명"
+    }
+  ]
+}
