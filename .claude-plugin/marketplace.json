@@ -17,6 +17,15 @@
       "skills": [
         "./skills/spec-interview"
       ]
+    },
+    {
+      "name": "release-skills",
+      "description": "Skills for automated release documentation and changelog generation",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/release-notes"
+      ]
     }
   ]
 }
