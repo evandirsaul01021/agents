@@ -24,6 +24,22 @@ Skills are defined as `SKILL.md` files — structured markdown documents that AI
 
 > ✅ Ready | 🚧 In Progress | 📋 Planned
 
+## Agents
+
+Agents are autonomous task executors that can be invoked via the Task tool in Claude Code. They are defined in `.claude/agents/` directory.
+
+| Agent | Description | Tools | Status |
+| --- | --- | --- | --- |
+| [load-test](.claude/agents/load-test.md) | k6 load test execution and automated report generation with performance metrics | Bash, Read, Write, Glob | ✅ |
+
+**Usage:**
+```
+"Run API load test"
+"Execute k6 performance test"
+```
+
+**Trigger Keywords:** load test, performance test, k6, stress test
+
 **Usage:**
 ```
 /spec-interview
